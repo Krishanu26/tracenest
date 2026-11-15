@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dataflow-event-sdk"
+version = "0.1.0"
+description = "A dependency-free Python client for the DataFlow error-event API"
+requires-python = ">=3.9"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["dataflow_sdk*"]
